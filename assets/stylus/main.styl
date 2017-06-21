@@ -83,7 +83,6 @@ footer
 		list-style none
 		overflow hidden
 		li
-			background #F8B032
 			border 5px solid #fff
 			height 300px
 			list-style none
@@ -100,12 +99,11 @@ footer
 			text-align center
 			cursor pointer
 			&:hover
-				background rgba(248, 176, 50, 0.36)
+				background #808080cc
 
 #video
 	height 300px
-	background-image url('../media/bg_video.png')
-	background-size 100%
+	overflow hidden
 
 #bg_petter
 	background-image url('../media/bg_petter.png')
@@ -117,10 +115,10 @@ footer
 	max-width 100%
 	color white
 	.man
-		height 500px
+		height 400px
 		text-align justify
 		p
-			padding 0 4em
+			padding 0 4em 4em 4em
 		h2
 			font-weight bold
 			font-size 40px
@@ -176,7 +174,8 @@ footer
 .oribit-container
 	height 300px
 	width auto
-
+.orbit-bullets button.is-active, .orbit-bullets button:hover
+	background #fff
 .orbit-bullets
 	background transparent
 	position absolute
@@ -197,7 +196,9 @@ footer
 	background-repeat no-repeat
 	background-size 50px
 	height 88px
-
+.menu .active > a
+	background transparent
+	color #f8b032
 .menu > li > a
 	color: white
 	font-weight bold
