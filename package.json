@@ -1,0 +1,24 @@
+{
+  "name": "jamarqueez",
+  "version": "1.0.0",
+  "description": "Petters website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Pedro",
+    "Guerrero"
+  ],
+  "author": "Jorge Marquez",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-handlebars": "^1.0.0",
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.2.0"
+  }
+}
