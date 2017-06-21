@@ -41,142 +41,150 @@
 	</section>
 
 	<div id="map" class="map"></div>
-	<form>
-		<div class="row">
-			<div class="medium-6 columns">
-				<input type="text" placeholder="NOMBRE">
-			</div>
-			<div class="medium-6 columns">
-				<input type="text" placeholder="CORREO ELECTRÓNICO">
-			</div>
-			<br><br>
-			<div class="medium-12 columns">
-				<label>
-					<strong style="font-size:1.5em;">Escribe tu Comentario</strong>
-					<br><br>
-					<textarea style="border:0;background-color: #F2F2F2;" rows="10" cols="50">
-						
-					</textarea>
-				</label>
-				<input type="submit" value="Enviar">
-			</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='MMERGE3';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+<form action="//github.us16.list-manage.com/subscribe/post?u=b669b5e322a7f75a4d548aa73&amp;id=908ee8c0e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<div class="row">
+		<div class="medium-6 columns">
+			<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="NOMBRE">
 		</div>
-	</form>
+		<div class="medium-6 columns">
+			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="CORREO ELECTRÓNICO">
+		</div>
+		<br><br>
+		<div class="medium-12 columns">
+			<label>
+				<strong style="font-size:1.5em;">Escribe tu Comentario</strong>
+				<br><br>
+				<textarea value="" name="MMERGE3" class="" id="mce-MMERGE3" style="border:0;background-color: #F2F2F2;color:#000;" rows="10" cols="50">
 
-	<footer>
-		<div class="row">
-			<div class="columns large-10 medium-10 small-10">
-				<p>
-				© Copyright 2017 Pedro D. Guerrero, Todos los derechos reservados, la propiedad intelectual y las imagenes pertenecen al Autor. Informar en caso de requerir alguna pieza al correo electronico <a href="#" mailto="hola@pedrodguerrero.com">hola@pedrodguerrero.com</a>
-				</p>
-			</div>
-			<div class="columns7 large-2 medium-2 small-2">
-				<img class="align-self-middle" src="/assets/media/fb.png">
-				<img class="align-self-middle" src="/assets/media/inst.png">
-			</div>
+				</textarea>
+			</label>
+			<div id="mce-responses" class="clear">
+				<div class="response" id="mce-error-response" style="display:none"></div>
+				<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b669b5e322a7f75a4d548aa73_908ee8c0e8" tabindex="-1" value=""></div>
+			<input type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe" class="button" style="border:0;padding:.5em 1em;font-weight:bold;background-color: gray;">
+
 		</div>
-	</footer>
+	</div>
+</form>
+
+<footer>
+	<div class="row">
+		<div class="columns large-10 medium-10 small-10">
+			<p>
+				© Copyright 2017 Pedro D. Guerrero, Todos los derechos reservados, la propiedad intelectual y las imagenes pertenecen al Autor. Informar en caso de requerir alguna pieza al correo electronico <a href="#" mailto="hola@pedrodguerrero.com">hola@pedrodguerrero.com</a>
+			</p>
+		</div>
+		<div class="columns7 large-2 medium-2 small-2">
+			<img class="align-self-middle" src="/assets/media/fb.png">
+			<img class="align-self-middle" src="/assets/media/inst.png">
+		</div>
+	</div>
+</footer>
 </body>
-    <script>
-      function initMap() {
+<script>
+	function initMap() {
         // Styles a map in night mode.
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 19.442272, lng: -99.2056417},
-          zoom: 12,
-          scrollwheel: false,
-  				disableDoubleClickZoom: true,
-          styles: [
-            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-            {
-              featureType: 'administrative.locality',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'poi',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'poi.park',
-              elementType: 'geometry',
-              stylers: [{color: '#263c3f'}]
-            },
-            {
-              featureType: 'poi.park',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#6b9a76'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'geometry',
-              stylers: [{color: '#38414e'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#212a37'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#9ca5b3'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'geometry',
-              stylers: [{color: '#746855'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#1f2835'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#f3d19c'}]
-            },
-            {
-              featureType: 'transit',
-              elementType: 'geometry',
-              stylers: [{color: '#2f3948'}]
-            },
-            {
-              featureType: 'transit.station',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'geometry',
-              stylers: [{color: '#17263c'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#515c6d'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'labels.text.stroke',
-              stylers: [{color: '#17263c'}]
-            }
-          ]
+        	center: {lat: 19.442272, lng: -99.2056417},
+        	zoom: 12,
+        	scrollwheel: false,
+        	disableDoubleClickZoom: true,
+        	styles: [
+        	{elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+        	{elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+        	{elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+        	{
+        		featureType: 'administrative.locality',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#d59563'}]
+        	},
+        	{
+        		featureType: 'poi',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#d59563'}]
+        	},
+        	{
+        		featureType: 'poi.park',
+        		elementType: 'geometry',
+        		stylers: [{color: '#263c3f'}]
+        	},
+        	{
+        		featureType: 'poi.park',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#6b9a76'}]
+        	},
+        	{
+        		featureType: 'road',
+        		elementType: 'geometry',
+        		stylers: [{color: '#38414e'}]
+        	},
+        	{
+        		featureType: 'road',
+        		elementType: 'geometry.stroke',
+        		stylers: [{color: '#212a37'}]
+        	},
+        	{
+        		featureType: 'road',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#9ca5b3'}]
+        	},
+        	{
+        		featureType: 'road.highway',
+        		elementType: 'geometry',
+        		stylers: [{color: '#746855'}]
+        	},
+        	{
+        		featureType: 'road.highway',
+        		elementType: 'geometry.stroke',
+        		stylers: [{color: '#1f2835'}]
+        	},
+        	{
+        		featureType: 'road.highway',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#f3d19c'}]
+        	},
+        	{
+        		featureType: 'transit',
+        		elementType: 'geometry',
+        		stylers: [{color: '#2f3948'}]
+        	},
+        	{
+        		featureType: 'transit.station',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#d59563'}]
+        	},
+        	{
+        		featureType: 'water',
+        		elementType: 'geometry',
+        		stylers: [{color: '#17263c'}]
+        	},
+        	{
+        		featureType: 'water',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#515c6d'}]
+        	},
+        	{
+        		featureType: 'water',
+        		elementType: 'labels.text.stroke',
+        		stylers: [{color: '#17263c'}]
+        	}
+        	]
         });
         var marker = new google.maps.Marker({
-			    position: {lat: 19.442272, lng: -99.2056417},
-			    map: map,
-			    title: 'Oficinas'
-			  });
+        	position: {lat: 19.442272, lng: -99.2056417},
+        	map: map,
+        	title: 'Oficinas'
+        });
         marker.setMap(map);
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCazesqdUEj43wMbPRBJhvbYz3IImXV77g&callback=initMap"
     async defer></script>
 
-<script type="text/javascript" src="/assets/js/vendor/what-input.js"></script>
-<script type="text/javascript" src="/assets/js/app.js"></script>
-</html>
+    <script type="text/javascript" src="/assets/js/vendor/what-input.js"></script>
+    <script type="text/javascript" src="/assets/js/app.js"></script>
+    </html>
